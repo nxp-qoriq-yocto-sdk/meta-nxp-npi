@@ -3,7 +3,7 @@ require recipes-bsp/u-boot/u-boot-qoriq_2016.01.bb
 python () {
     ml = d.getVar("MULTILIB_VARIANTS", True)
     arch = d.getVar("OVERRIDES", True)
-    if "ls1046a-32b:" in arch:
+    if "ls1046a-32b:" in arch or "ls1043a-32b:" in arch:
         if not "lib64" in ml:
             raise bb.parse.SkipPackage("Building the u-boot for this arch requires multilib to be enabled")
         sys_multilib = 'aarch64' + d.getVar('TARGET_VENDOR') + 'mllib64-linux'
