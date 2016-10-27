@@ -1,3 +1,5 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/${BPN}:"
+
 inherit deploy
 
 do_deploy () {
