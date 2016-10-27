@@ -1,1 +1,2 @@
 REGLEX_ls1046a = "t2080"
+REGLEX_ls1043a = "t2080"
