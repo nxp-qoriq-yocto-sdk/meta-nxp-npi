@@ -15,3 +15,24 @@ python () {
 
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/u-boot-sdk.git;branch=master;protocol=http"
 SRCREV = "a2975e0ed02df7d556dbb0c7842ed333145254b7"
+
+do_compile_append_qoriq() {
+    unset i j k
+    for config in ${UBOOT_MACHINE}; do
+        i=`expr $i + 1`;
+        for type in ${UBOOT_CONFIG}; do
+            j=`expr $j + 1`;
+            for binary in ${UBOOT_BINARIES}; do
+                k=`expr $k + 1`
+                if [ $j -eq $i ] && [ $k -eq $i ]; then
+                    if [ "qspi" = "${type}" ];then
+                        cp ${config}/${binary} ${config}/u-boot-${type}-${PV}-${PR}.${UBOOT_SUFFIX}
+                    fi
+                fi
+            done
+            unset k
+        done
+        unset j
+    done
+    unset i
+}
