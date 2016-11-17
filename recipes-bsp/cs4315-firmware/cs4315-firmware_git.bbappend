@@ -1,4 +1,7 @@
-SRCREV_ls1046a = "a200a938dd28264a0291669b199b9b963e1a24c7"
+LICENSE_ls1046a = "Freescale-EULA"
+LIC_FILES_CHKSUM_ls1046a = "file://EULA;md5=c9ae442cf1f9dd6c13dfad64b0ffe73f"
+
+SRCREV_ls1046a = "bea78a4577ce6e416813f1b83ed16c4cf9d34c36"
 
 UCODE_ls1046a = "\
     aquantia/apps/aq_programming.bin \
