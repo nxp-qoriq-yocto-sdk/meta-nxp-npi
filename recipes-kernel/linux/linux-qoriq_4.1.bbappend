@@ -1,4 +1,3 @@
-SRC_URI = "git://sw-stash.freescale.net/scm/sdk/linux-sdk2.0.git;branch=yocto/sdk-2.0.x;protocol=http"
 SRCREV = "4004071c129a776136e71f6a85383fea87f5db75"
 
 do_compile_prepend_ls1043a-32b() {

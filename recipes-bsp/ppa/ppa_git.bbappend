@@ -1,6 +1,6 @@
 LIC_FILES_CHKSUM = "file://ppa/EULA.txt;md5=60037ccba533a5995e8d1a838d85799c"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dnnpi/ppa-generic.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/ppa-generic.git;branch=sdk-v2.0.x"
 SRCREV = "cb683b7cab76f2d685f54393d3b51dd1d02dac9d"
 
 PPA_PATH ?= "ppa/soc-ls1043/platform-rdb"
