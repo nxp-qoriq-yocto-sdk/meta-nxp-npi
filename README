@@ -1,12 +1,12 @@
 NXP's QorIQ SDK Project
 =============================
-This is GA 16.11 release which based on SDK v2.0.
+This is GA 1701 release which based on SDK v2.0.
 
 Steps to build:
 1. Install SDK 2.0 source ISO
 2. Install SDK 2.0 aarch64 cache ISO #optional, to speed up build
 3. $ cd <iso_install_location>/QorIQ-SDK-V2.0-20160527-yocto/sources/
-4. $ git clone git://git.freescale.com/yocto/meta-nxp-npi.git -b jethro-sdk-v2.0-ga-16.11 meta-nxp-npi-ga
+4. $ git clone git://git.freescale.com/yocto/meta-nxp-npi.git -b jethro-sdk-v2.0-ga-1701 meta-nxp-npi-ga
 5. $ ln -s meta-nxp-npi-ga meta-fsl-local-build #a hack as meta-nxp-npi layer is not included in fsl-setup-env script by default
 6. $ cd <iso_install_location>/QorIQ-SDK-V2.0-20160527-yocto/
 7. $ . ./fsl-setup-env -m <board>
