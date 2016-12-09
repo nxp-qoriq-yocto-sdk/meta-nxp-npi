@@ -5,6 +5,7 @@ SRCREV = "cb683b7cab76f2d685f54393d3b51dd1d02dac9d"
 
 PPA_PATH ?= "ppa/soc-ls1043/platform-rdb"
 PPA_PATH_ls1046a = "ppa/soc-ls1046/platform-rdb"
+PPA_PATH_ls1012a = "ppa/soc-ls1012/platform-rdb"
 PPA_NAME ?= "ppa-${MACHINE}-${DATETIME}"
 PPA_NAME[vardepsexclude] = "DATETIME"
 
@@ -31,4 +32,4 @@ do_deploy(){
 
 CLEANBROKEN = "1"
 PARALLEL_MAKE = ""
-COMPATIBLE_MACHINE = "(ls1043a|ls1046a)"
+COMPATIBLE_MACHINE = "(ls1012a|ls1043a|ls1046a)"
