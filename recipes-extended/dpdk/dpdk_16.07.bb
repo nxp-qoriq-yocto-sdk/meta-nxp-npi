@@ -7,8 +7,12 @@ DEPENDS += "virtual/kernel openssl"
 RDEPENDS_${PN} = "bash python"
 RDEPENDS_${PN}-examples = "bash python-core"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk.git;branch=16.07-qoriq;protocol=http"
-SRCREV = "4b7abe6b9ce0b860d207e54820ab411e816c03ea"
+inherit module
+
+SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk.git;branch=16.07-qoriq;protocol=http \
+    file://add-RTE_KERNELDIR_OUT-to-split-kernel-bu.patch \
+"
+SRCREV = "b9d1b606ca0e69d8ae16f21682291a866cf36cda"
 
 S = "${WORKDIR}/git"
 
@@ -34,7 +38,7 @@ do_install() {
     oe_runmake T="${RTE_TARGET}" DESTDIR="${D}" install
 
     # Build and install the DPDK examples
-    for APP in examples/l2fwd examples/l3fwd examples/l2fwd-crypto examples/ipsec-secgw; do
+    for APP in examples/l2fwd examples/l3fwd examples/l2fwd-crypto examples/ipsec-secgw examples/kni; do
         oe_runmake -C ${APP}
 
         [ ! -d ${D}/${bindir}/dpdk-example ] && install -d 0644 ${D}/${bindir}/dpdk-example
@@ -42,6 +46,9 @@ do_install() {
             ${D}/${bindir}/dpdk-example/
     done
     install -m 0755 ${S}/${RTE_TARGET}/app/testpmd ${D}/${bindir}/dpdk-example/
+    rm -fr ${D}/lib/modules/*
+    install -d ${D}/lib/modules/${KERNEL_VERSION}/dpdk
+    install -m 0755 ${S}/${RTE_TARGET}/kmod/rte_kni.ko ${D}/lib/modules/${KERNEL_VERSION}/dpdk/
 
     sed -i 's#/bin/echo#/bin/bash#' ${D}/${datadir}/scripts/load-devel-config.sh
    # rm ${S}/${RTE_TARGET}/app/dpdk-pmdinfogen
@@ -54,7 +61,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PACKAGES += "${PN}-examples"
 
-FILES_${PN} += "${datadir}/tools"
+FILES_${PN} += "${datadir}/tools /usr/bin/* /usr/sbin/*"
 FILES_${PN}-dbg += "${bindir}/dpdk-example/.debug \
     ${datadir}/examples/kni/build/.debug \
     ${datadir}/examples/kni/build/app/.debug \
