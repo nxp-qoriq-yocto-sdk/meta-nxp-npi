@@ -10,7 +10,8 @@ SRCREV = "ebc515aad0605ad90d8ade5c1fde60d8da86973f"
 
 S = "${WORKDIR}/git"
 
-export DPAA_VER = "dpaa2"
+DPAA_VER ?= "dpaa2"
+DPAA_VER_fsl-lsch2 = "dpaa"
 
 do_install() {
     install -d ${D}/${bindir}/dpdk-example/extras
