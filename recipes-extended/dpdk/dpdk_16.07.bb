@@ -16,10 +16,11 @@ SRCREV = "b9d1b606ca0e69d8ae16f21682291a866cf36cda"
 
 S = "${WORKDIR}/git"
 
-export DPAA_VER = "dpaa2"
-export RTE_TARGET = "arm64-${DPAA_VER}-linuxapp-gcc"
+DPAA_VER ?= "dpaa2"
+DPAA_VER_fsl-lsch2 = "dpaa"
+export RTE_TARGET = "${ARCH}-${DPAA_VER}-linuxapp-gcc"
 
-EXTRA_OEMAKE += 'ARCH="arm64" CROSS="${TARGET_PREFIX}" \
+EXTRA_OEMAKE += 'ARCH="${ARCH}" CROSS="${TARGET_PREFIX}" \
     CPU_CFLAGS="--sysroot=${STAGING_DIR_HOST}" RTE_SDK="${S}" \
     OPENSSL_PATH="${STAGING_DIR_HOST}" RTE_KERNELDIR="${STAGING_KERNEL_DIR}" \
     RTE_KERNELDIR_OUT="${STAGING_KERNEL_BUILDDIR}" \
@@ -75,7 +76,7 @@ FILES_${PN}-dbg += "${bindir}/dpdk-example/.debug \
     ${datadir}/examples/ipsec-secgw/build/app/.debug \
 "
 FILES_${PN}-dev += "${datadir}/mk ${datadir}/scripts \
-    ${datadir}/arm64-dpaa2-linuxapp-gcc \
+    ${datadir}/${RTE_TARGET} \
     ${includedir} \
 "
 FILES_${PN}-examples += "${datadir}/examples"
