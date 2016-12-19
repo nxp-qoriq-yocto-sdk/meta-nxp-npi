@@ -12,10 +12,11 @@ SRCREV = "84599fad4a10597fb4377174abdeb84b871cb4b0"
 
 S = "${WORKDIR}/git"
 
-export DPAA_VER = "dpaa2"
-export RTE_TARGET = "arm64-${DPAA_VER}-linuxapp-gcc"
+DPAA_VER ?= "dpaa2"
+DPAA_VER_fsl-lsch2 = "dpaa"
+export RTE_TARGET = "${ARCH}-${DPAA_VER}-linuxapp-gcc"
 
-EXTRA_OEMAKE += 'ARCH="arm64" CROSS="${TARGET_PREFIX}" \
+EXTRA_OEMAKE += 'ARCH="${ARCH}" CROSS="${TARGET_PREFIX}" \
     CPU_CFLAGS="--sysroot=${STAGING_DIR_HOST}" RTE_SDK="${S}" \
     OPENSSL_PATH="${STAGING_DIR_HOST}" RTE_KERNELDIR="${STAGING_KERNEL_DIR}" \
     RTE_KERNELDIR_OUT="${STAGING_KERNEL_BUILDDIR}" \
