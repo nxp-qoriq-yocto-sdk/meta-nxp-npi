@@ -8,6 +8,7 @@ M="${@d.getVar('MACHINE', True).replace('-64b','').replace('-32b','').replace('-
 do_install () {
     install -d ${D}/boot/rcw
     cp -a ${S}/${M} ${D}/boot/rcw/
+    chown -R root:root ${D}/boot/rcw/
 }
 
 do_deploy () {
