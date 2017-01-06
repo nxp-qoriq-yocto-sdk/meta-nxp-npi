@@ -1,1 +1,2 @@
-SRCREV = "a21c62ec9ac015f6c37f89d595e892852055b0fb"
+SRC_URI = "git://sw-stash.freescale.net/scm/sdk/usdpaa.git;branch=sdk-v2.0.x;protocol=http"
+SRCREV = "7dd9b4eee5346729a83adad491dda979d55ac62b"
