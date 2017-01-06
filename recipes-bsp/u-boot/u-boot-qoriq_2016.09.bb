@@ -14,7 +14,7 @@ python () {
 }
 
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/u-boot-sdk.git;branch=master;protocol=http"
-SRCREV = "7661a3272383a05529ac3ad9f05f23c9d59780f0"
+SRCREV = "c0138828dc69a1931c0481ca9ac8f66c7778a2ae"
 
 do_compile_append_qoriq() {
     unset i j k
