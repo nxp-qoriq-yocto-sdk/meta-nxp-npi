@@ -12,7 +12,7 @@ inherit module
 SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk.git;branch=16.07-qoriq;protocol=http \
     file://add-RTE_KERNELDIR_OUT-to-split-kernel-bu.patch \
 "
-SRCREV = "b9d1b606ca0e69d8ae16f21682291a866cf36cda"
+SRCREV = "34b69f9ab1af11db43df2d616be1c1f20feef70b"
 
 S = "${WORKDIR}/git"
 
