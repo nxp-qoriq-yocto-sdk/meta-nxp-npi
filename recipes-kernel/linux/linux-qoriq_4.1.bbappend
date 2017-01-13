@@ -1,5 +1,5 @@
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/linux-sdk2.0.git;branch=yocto/sdk-2.0.x;protocol=http"
-SRCREV = "f81495b481edec1a1f08330b683fa9143262774a"
+SRCREV = "b14540ee315f79f6a5dfc621e7f4217c8fac7d1c"
 
 DELTA_KERNEL_DEFCONFIG_prepend_ls1012a-32b = "freescale_aarch32.config "
 DELTA_KERNEL_DEFCONFIG_prepend_ls1043a-32b = "freescale_aarch32.config "
