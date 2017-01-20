@@ -1,4 +1,4 @@
-SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/ls2-rcw.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/ls2-rcw.git;nobranch=1"
 SRCREV = "83a7a661404b760874759073c9f14c8c2c8a9af3"
 
 inherit siteinfo
