@@ -7,7 +7,7 @@ RDEPENDS_${PN} = "bash libcrypto libssl python"
 
 inherit pythonnative
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dqns/ovs-dpdk.git;branch=branch-2.6;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/ovs-dpdk.git;nobranch=1"
 SRCREV = "84599fad4a10597fb4377174abdeb84b871cb4b0"
 
 S = "${WORKDIR}/git"

@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE.GPL;md5=751419260aa954499f7abaabaa882bbe"
 
 RDEPENDS_${PN} = "dpdk"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk-extras.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/dpdk-extras.git;nobranch=1"
 SRCREV = "ebc515aad0605ad90d8ade5c1fde60d8da86973f"
 
 S = "${WORKDIR}/git"
