@@ -16,4 +16,4 @@ do_deploy () {
     cp -a ${S}/${M} ${DEPLOYDIR}/rcw/
 }
 
-COMPATIBLE_MACHINE = "(ls1012a|ls2080a)"
+COMPATIBLE_MACHINE = "(ls1012a|ls2080a|ls2088a)"
