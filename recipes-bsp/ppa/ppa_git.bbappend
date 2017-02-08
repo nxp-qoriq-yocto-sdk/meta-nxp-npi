@@ -22,6 +22,7 @@ EXTRA_OEMAKE = 'CC64="${WRAP_TARGET_PREFIX}gcc ${TOOLCHAIN_OPTIONS}" LD64="${WRA
 PPA_PATH ?= "ppa/soc-ls1043/platform-rdb"
 PPA_PATH_ls1046a = "ppa/soc-ls1046/platform-rdb"
 PPA_PATH_ls1012a = "ppa/soc-ls1012/platform-rdb"
+PPA_PATH_ls2088a = "ppa/soc-ls2088/platform-rdb"
 PPA_NAME ?= "ppa-${MACHINE}-${DATETIME}"
 PPA_NAME[vardepsexclude] = "DATETIME"
 
@@ -48,4 +49,4 @@ do_deploy(){
 
 CLEANBROKEN = "1"
 PARALLEL_MAKE = ""
-COMPATIBLE_MACHINE = "(ls1012a|ls1043a|ls1046a)"
+COMPATIBLE_MACHINE = "(ls1012a|ls1043a|ls1046a|ls2088a)"
