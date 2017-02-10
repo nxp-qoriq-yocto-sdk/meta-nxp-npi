@@ -14,4 +14,15 @@ RDEPENDS_${PN}_append_ls1046ardb = " \
     dpdk \
     dpdk-extras \
 "
+RDEPENDS_${PN}_append_ls2088a = " \
+    aiopsl \
+    dce \
+    devmem2 \
+    dpdk \
+    dpdk-extras \
+    gpp-aioptool \
+    odp \
+    ofp \
+    scatter-gather \
+"
 
