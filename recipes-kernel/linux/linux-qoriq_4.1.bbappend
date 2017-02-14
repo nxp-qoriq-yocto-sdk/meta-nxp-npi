@@ -1,5 +1,5 @@
 SRC_URI = "git://git.freescale.com/ppc/sdk/linux.git;nobranch=1"
-SRCREV = "b14540ee315f79f6a5dfc621e7f4217c8fac7d1c"
+SRCREV = "a670e823f6fda8f5cac8263a78a2c50ed7ba0009"
 
 DELTA_KERNEL_DEFCONFIG_prepend_ls1012a-32b = "freescale_aarch32.config "
 DELTA_KERNEL_DEFCONFIG_prepend_ls1043a-32b = "freescale_aarch32.config "
