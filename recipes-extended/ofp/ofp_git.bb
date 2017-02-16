@@ -22,6 +22,7 @@ DEPENDS = "odp"
 
 EXTRA_OECONF = " \
     --prefix=/usr \
+    --libdir=${libdir} \
     --host=${SIMPLE_TARGET_SYS} \
     --with-odp=${STAGING_DIR_TARGET} \
 "
