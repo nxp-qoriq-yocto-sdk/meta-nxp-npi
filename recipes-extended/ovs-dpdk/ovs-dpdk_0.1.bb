@@ -45,5 +45,6 @@ do_install() {
 
 ALLOW_EMPTY_${PN} = "1"
 INHIBIT_PACKAGE_STRIP = "1"
+INSANE_SKIP_${PN} = "useless-rpaths"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 COMPATIBLE_MACHINE = "(ls2080ardb|ls2084ardb|ls2088a|ls1043a|ls1046a)"
