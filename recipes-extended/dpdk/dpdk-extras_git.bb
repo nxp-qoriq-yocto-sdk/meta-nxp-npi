@@ -1,12 +1,11 @@
 DESCRIPTION = "Data Plane Development Kit Extended utilities"
 HOMEPAGE = "http://dpdk.org"
-LICENSE = "GPLv2"
-LIC_FILES_CHKSUM = "file://LICENSE.GPL;md5=751419260aa954499f7abaabaa882bbe"
-
+LICENSE = "BSD"
+LIC_FILES_CHKSUM = "file://COPYING;md5=d65993a77975d92d8125471e44ab0b21"
 RDEPENDS_${PN} = "dpdk"
 
 SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk-extras.git;branch=master;protocol=http"
-SRCREV = "ebc515aad0605ad90d8ade5c1fde60d8da86973f"
+SRCREV = "31f9b1446461dc6c5e96041887730a13c3e5f2ea"
 
 S = "${WORKDIR}/git"
 

@@ -12,7 +12,7 @@ inherit module
 SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk.git;branch=16.07-qoriq;protocol=http \
     file://add-RTE_KERNELDIR_OUT-to-split-kernel-bu.patch \
 "
-SRCREV = "57775552948d2f7359d45ec00d1b0ab99203275f"
+SRCREV = "249254f741d98192d77db648f9df98e38a94df9d"
 
 S = "${WORKDIR}/git"
 
@@ -39,7 +39,7 @@ do_install() {
     oe_runmake T="${RTE_TARGET}" DESTDIR="${D}" install
 
     # Build and install the DPDK examples
-    for APP in examples/l2fwd examples/l3fwd examples/l2fwd-crypto examples/ipsec-secgw examples/kni; do
+    for APP in examples/l2fwd examples/l3fwd examples/l2fwd-crypto examples/ipsec-secgw examples/kni examples/ip_fragmentation examples/ip_reassembly; do
         oe_runmake -C ${APP}
 
         [ ! -d ${D}/${bindir}/dpdk-example ] && install -d 0644 ${D}/${bindir}/dpdk-example
@@ -74,6 +74,10 @@ FILES_${PN}-dbg += "${bindir}/dpdk-example/.debug \
     ${datadir}/examples/l3fwd/build/app/.debug \
     ${datadir}/examples/ipsec-secgw/build/.debug \
     ${datadir}/examples/ipsec-secgw/build/app/.debug \
+    ${datadir}/examples/ip_fragmentation/build/.debug \
+    ${datadir}/examples/ip_fragmentation/build/app/.debug \
+    ${datadir}/examples/ip_reassembly/build/.debug \
+    ${datadir}/examples/ip_reassembly/build/app/.debug \
 "
 FILES_${PN}-dev += "${datadir}/mk ${datadir}/scripts \
     ${datadir}/${RTE_TARGET} \
