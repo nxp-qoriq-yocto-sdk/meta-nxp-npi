@@ -8,7 +8,6 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=fbe4957c430eed6cc20521d4eb429fae"
 
 SRC_URI = "git://github.com/OpenFastPath/ofp.git;protocol=https \
            file://0001-Patch-to-install-ofp-example-applications.patch \
-           file://0001-Temporary-change-value-of-maximum-number-of-cores-pa.patch \
 "
 SRCREV = "f7ea51b32450ba45d87aff79504e39fad801e7a7"
 
