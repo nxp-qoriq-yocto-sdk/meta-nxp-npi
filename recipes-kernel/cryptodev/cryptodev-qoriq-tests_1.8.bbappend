@@ -1,3 +1,4 @@
+RDEPENDS_${PN}_append_qoriq = " bash"
 FILESEXTRAPATHS_prepend := "${THISDIR}/sdk_patches:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/yocto_patches:"
 
