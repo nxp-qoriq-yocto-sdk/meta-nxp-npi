@@ -1,0 +1,25 @@
+From 6be6bc5149c01a301e72745d29fe35b8fce7a6e0 Mon Sep 17 00:00:00 2001
+From: Fridolin Pokorny <fpokorny@redhat.com>
+Date: Fri, 8 Jan 2016 09:38:29 +0100
+Subject: [PATCH 025/104] fix benchmarks linking
+
+---
+ lib/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/Makefile b/lib/Makefile
+index af87795..3bedc34 100644
+--- a/lib/Makefile
++++ b/lib/Makefile
+@@ -3,7 +3,7 @@ CFLAGS=-g -O2 -Wall
+ all: benchmark
+ 
+ benchmark: main.c libthreshold.a
+-	gcc $(CFLAGS) -DDEBUG -o $@ $^ -lssl libthreshold.a
++	gcc $(CFLAGS) -DDEBUG -o $@ $^ -lssl -lcrypto libthreshold.a
+ 
+ .o:
+ 	gcc $(CCFLAGS) -c $< -o $@
+-- 
+2.10.2
+
