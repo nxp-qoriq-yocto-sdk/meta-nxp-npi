@@ -4,7 +4,7 @@ REQUIRED_DISTRO_FEATURES = ""
 RDEPENDS_${PN}_remove = "cryptodev-module"
 
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/pkc-host.git;branch=master;protocol=http"
-SRCREV = "0624112095526c666e689e63924683a7e64dace2"
+SRCREV = "951c35ddf77ce7c5bae7776215dd8c6e12fb4ef8"
 
 do_install() {
     oe_runmake INSTALL_MOD_PATH="${D}" modules_install
