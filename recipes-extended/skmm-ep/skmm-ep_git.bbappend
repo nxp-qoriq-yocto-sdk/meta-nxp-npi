@@ -1,1 +1,4 @@
-SRCREV = "fc43230ac3044917c9df12e9e4f6a38a4d9b80aa"
+SRC_URI = "git://sw-stash.freescale.net/scm/sdk/skmm-ep.git;branch=master;protocol=http \
+    file://add-two-missing-header-files.patch \
+"
+SRCREV = "de6816c7d66129683bc62229b482ac3cf585d896"
