@@ -91,7 +91,7 @@ do_configure () {
 	linux-armeb)
 		target=linux-elf-armeb
 		;;
-	linux-aarch64_be)
+	linux-aarch64-be)
 		target=linux-generic64
 		;;
 	linux-aarch64*)
