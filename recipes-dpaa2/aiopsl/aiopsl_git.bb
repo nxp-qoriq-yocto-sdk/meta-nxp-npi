@@ -8,7 +8,7 @@ BASEDEPENDS = ""
 S = "${WORKDIR}/git"
 
 SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/aiopsl.git;branch=develop;protocol=http"
-SRCREV = "3214345f4b524b07ffbfb947f5dad2ac4f675a7f"
+SRCREV = "dcc52a4938bda79eb98c9da8b78cc053164da5fa"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
