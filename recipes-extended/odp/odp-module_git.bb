@@ -13,4 +13,4 @@ do_install () {
     install -m 755 ${S}/kern/odpfsl_kni.ko ${D}/lib/modules/${KERNEL_VERSION}/odp
 }
 
-COMPATIBLE_MACHINE = "(ls2088a)"
+COMPATIBLE_MACHINE = "(ls1043a|ls1046a|ls2088a)"

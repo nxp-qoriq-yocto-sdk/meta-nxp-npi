@@ -9,8 +9,14 @@ DEPENDS = "openssl cunit"
 RDEPENDS_${PN} = "bash libcrypto libssl odp-module odp-counters"
 
 ODP_SOC ?= ""
-ODP_PLATFORM = "linux-dpaa2"
+ODP_SOC_ls1043a = "LS1043"
+ODP_SOC_ls1046a = "LS1046"
+ODP_PLATFORM ?= "linux-dpaa2"
+ODP_PLATFORM_ls1043a = "linux-dpaa1"
+ODP_PLATFORM_ls1046a = "linux-dpaa1"
 ODP_BUILD_TYPE ?= "ls2088"
+ODP_BUILD_TYPE_ls1043a = "ls1043"
+ODP_BUILD_TYPE_ls1046a = "ls1046"
 
 EXTRA_OECONF = "--with-platform=${ODP_PLATFORM} \
                 --with-sdk-install-path=${STAGING_DIR_TARGET} \
@@ -54,4 +60,4 @@ do_install_append () {
 FILES_${PN}-staticdev += "${datadir}/opendataplane/*.la"
 FILES_${PN} += "/usr/odp/bin /usr/odp/scripts /usr/odp/debug /usr/odp/test/validation /usr/odp/test/performance /usr/odp/test/miscellaneous /usr/odp/test/api_test"
 FILES_${PN}-dbg += "/usr/odp/bin/.debug /usr/odp/debug/.debug /usr/odp/test/validation/.debug /usr/odp/test/performance/.debug /usr/odp/test/miscellaneous/.debug /usr/odp/test/api_test/.debug"
-COMPATIBLE_MACHINE = "(ls2088a)"
+COMPATIBLE_MACHINE = "(ls1043a|ls1046a|ls2088a)"
