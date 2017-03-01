@@ -1,3 +1,5 @@
+SCMVERSION = ""
+
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/linux-sdk2.0.git;branch=yocto/sdk-2.0.x;protocol=http"
 SRCREV = "fcd7a05fdfeebddb19bf72621c4c818900ab2896"
 
