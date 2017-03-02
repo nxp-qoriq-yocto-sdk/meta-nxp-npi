@@ -9,14 +9,14 @@ DEPENDS = "openssl cunit libxml2"
 RDEPENDS_${PN} = "bash libcrypto libssl odp-module odp-counters"
 
 ODP_SOC ?= ""
-ODP_SOC_ls1043a = "LS1043"
-ODP_SOC_ls1046a = "LS1046"
+ODP_SOC_ls1043ardb = "LS1043"
+ODP_SOC_ls1046ardb = "LS1046"
 ODP_PLATFORM ?= "linux-dpaa2"
-ODP_PLATFORM_ls1043a = "linux-dpaa1"
-ODP_PLATFORM_ls1046a = "linux-dpaa1"
+ODP_PLATFORM_ls1043ardb = "linux-dpaa1"
+ODP_PLATFORM_ls1046ardb = "linux-dpaa1"
 ODP_BUILD_TYPE ?= "ls2088"
-ODP_BUILD_TYPE_ls1043a = "ls1043"
-ODP_BUILD_TYPE_ls1046a = "ls1046"
+ODP_BUILD_TYPE_ls1043ardb = "ls1043"
+ODP_BUILD_TYPE_ls1046ardb = "ls1046"
 
 EXTRA_OECONF = "--with-platform=${ODP_PLATFORM} \
                 --with-sdk-install-path=${STAGING_DIR_TARGET} \
