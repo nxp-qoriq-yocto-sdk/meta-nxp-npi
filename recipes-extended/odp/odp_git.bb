@@ -4,7 +4,7 @@ inherit autotools-brokensep
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-DEPENDS = "openssl cunit"
+DEPENDS = "openssl cunit libxml2"
 
 RDEPENDS_${PN} = "bash libcrypto libssl odp-module odp-counters"
 
