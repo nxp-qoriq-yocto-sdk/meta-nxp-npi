@@ -16,3 +16,5 @@ SRCREV_qbman = "0b8648d702f701417cd6cc3cbcdc228e640d20b6"
 SRCREV_rta = "bbab28b03ae21c52ce913f8b052acf53bd24ff5d"
 
 S = "${WORKDIR}/git"
+
+COMPATIBLE_MACHINE = "(ls1043a|ls1046a|ls2080a|ls2088a)"

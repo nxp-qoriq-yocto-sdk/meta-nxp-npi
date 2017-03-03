@@ -17,6 +17,7 @@ ODP_PLATFORM_ls1046ardb = "linux-dpaa1"
 ODP_BUILD_TYPE ?= "ls2088"
 ODP_BUILD_TYPE_ls1043ardb = "ls1043"
 ODP_BUILD_TYPE_ls1046ardb = "ls1046"
+ODP_BUILD_TYPE_ls2080ardb = "ls2080"
 
 EXTRA_OECONF = "--with-platform=${ODP_PLATFORM} \
                 --with-sdk-install-path=${STAGING_DIR_TARGET} \
@@ -60,4 +61,3 @@ do_install_append () {
 FILES_${PN}-staticdev += "${datadir}/opendataplane/*.la"
 FILES_${PN} += "/usr/odp/bin /usr/odp/scripts /usr/odp/debug /usr/odp/test/validation /usr/odp/test/performance /usr/odp/test/miscellaneous /usr/odp/test/api_test"
 FILES_${PN}-dbg += "/usr/odp/bin/.debug /usr/odp/debug/.debug /usr/odp/test/validation/.debug /usr/odp/test/performance/.debug /usr/odp/test/miscellaneous/.debug /usr/odp/test/api_test/.debug"
-COMPATIBLE_MACHINE = "(ls1043a|ls1046a|ls2088a)"
