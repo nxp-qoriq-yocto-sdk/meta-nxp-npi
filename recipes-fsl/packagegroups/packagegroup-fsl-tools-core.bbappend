@@ -16,6 +16,11 @@ RDEPENDS_${PN}_append_ls1046ardb = " \
     dpdk-extras \
     odp \
 "
+RDEPENDS_${PN}_append_ls2080ardb = " \
+    dpdk \
+    dpdk-extras \
+    odp \
+"
 RDEPENDS_${PN}_append_ls2088a = " \
     aiopsl \
     dce \
