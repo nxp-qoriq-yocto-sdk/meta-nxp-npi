@@ -9,12 +9,10 @@ RDEPENDS_${PN}_append_qoriq = " pciutils pkc-host"
 RDEPENDS_${PN}_append_ls1043ardb = " \
     dpdk \
     dpdk-extras \
-    odp \
 "
 RDEPENDS_${PN}_append_ls1046ardb = " \
     dpdk \
     dpdk-extras \
-    odp \
 "
 RDEPENDS_${PN}_append_ls2080ardb = " \
     dpdk \
