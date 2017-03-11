@@ -11,7 +11,7 @@ git://sw-stash.freescale.net/scm/gitam/odp.git;branch=fsl_odp_v16.07_qoriq;proto
 git://sw-stash.freescale.net/scm/dpaa2/qbman_userspace.git;protocol=http;name=qbman;destsuffix=git/platform/linux-dpaa2/flib/qbman \
 git://sw-stash.freescale.net/scm/sdk/flib.git;protocol=http;name=rta;destsuffix=git/platform/linux-dpaa2/flib/rta \
 "
-SRCREV = "a3f35a8656d916b0b24e0f1156eb6f212e53398b"
+SRCREV = "6ae53b86aa49067cb093533131b255fc9b9f7633"
 SRCREV_qbman = "0b8648d702f701417cd6cc3cbcdc228e640d20b6"
 SRCREV_rta = "bbab28b03ae21c52ce913f8b052acf53bd24ff5d"
 
