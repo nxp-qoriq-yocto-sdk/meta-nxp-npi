@@ -1,2 +1,2 @@
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/cst.git;branch=master;protocol=http"
-SRCREV = "395cd678da51854cd124ac7913e279d191eab804"
+SRCREV = "d5c123b8b479a79ce26947d9e00deff280fd0bc3"
