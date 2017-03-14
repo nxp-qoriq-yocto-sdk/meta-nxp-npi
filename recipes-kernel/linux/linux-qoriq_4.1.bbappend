@@ -1,7 +1,7 @@
 SCMVERSION = ""
 
 SRC_URI = "git://sw-stash.freescale.net/scm/sdk/linux-sdk2.0.git;branch=yocto/sdk-2.0.x;protocol=http"
-SRCREV = "2a82fa8a0da75710230f2aa0db26ba1683e3d622"
+SRCREV = "3e1d0aea6f335536dd84febf7d93f6fe2b201398"
 
 DELTA_KERNEL_DEFCONFIG_prepend_ls1012a-32b = "freescale_aarch32.config "
 DELTA_KERNEL_DEFCONFIG_prepend_ls1043a-32b = "freescale_aarch32.config "
