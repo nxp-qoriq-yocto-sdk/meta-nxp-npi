@@ -1,5 +1,5 @@
 SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/ls2-rcw.git;branch=master;protocol=http"
-SRCREV = "900340e911f9386e1285e123fd499f82e857d05c"
+SRCREV = "5d4624f74ad2744160060a006b7b5a6359d69142"
 
 inherit siteinfo
 
