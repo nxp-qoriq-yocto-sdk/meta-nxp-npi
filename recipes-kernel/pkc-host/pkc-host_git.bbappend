@@ -3,7 +3,7 @@ REQUIRED_DISTRO_FEATURES = ""
 # Cryptodev is not necessary for pkc-host to function
 RDEPENDS_${PN}_remove = "cryptodev-module"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/sdk/pkc-host.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/pkc-host.git;nobranch=1"
 SRCREV = "951c35ddf77ce7c5bae7776215dd8c6e12fb4ef8"
 
 do_install() {
