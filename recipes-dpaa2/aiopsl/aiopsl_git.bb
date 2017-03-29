@@ -1,14 +1,14 @@
 DESCRIPTION = "DPAA2 Accelerated I/O Processing service layer"
 SECTION = "dpaa2"
-LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://src/include/common/fsl_stdio.h;beginline=2;endline=24;md5=ee87f38a0b9280575e834a11851d9bd3"
+LICENSE = "BSD-3-Clause"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=faf479bdc4702d8033049f97e153f876"
 
 BASEDEPENDS = ""
 
 S = "${WORKDIR}/git"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/aiopsl.git;branch=develop;protocol=http"
-SRCREV = "dcc52a4938bda79eb98c9da8b78cc053164da5fa"
+SRC_URI = "git://git.freescale.com/ppc/sdk/aiopsl.git;nobranch=1"
+SRCREV = "80f3d450896d17a3d8e10f3c6d1c224e78d32757"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
