@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d65993a77975d92d8125471e44ab0b21"
 RDEPENDS_${PN} = "dpdk"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/gitam/dpdk-extras.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/dpdk-extras.git;nobranch=1"
 SRCREV = "47ee260f878d83154aeb69d9f84819ce76cc1567"
 
 S = "${WORKDIR}/git"
