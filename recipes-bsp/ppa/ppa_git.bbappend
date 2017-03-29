@@ -13,7 +13,7 @@ python () {
 
 LIC_FILES_CHKSUM = "file://ppa/EULA.txt;md5=60037ccba533a5995e8d1a838d85799c"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dnnpi/ppa-generic.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/ppa-generic.git;nobranch=1"
 SRCREV = "9fcb080dd7415927aa3fbabfcba8982bcb1466d3"
 
 WRAP_TARGET_PREFIX ?= "${TARGET_PREFIX}"
