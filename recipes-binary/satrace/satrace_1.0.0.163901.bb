@@ -4,8 +4,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bf20d39b348e1b0ed964c91a97638bbb"
 
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 
-SRCBRANCH = "satrace_gcc4.9"
-SRC_URI = "git://sw-stash.freescale.net/scm/dsa/sdk_components.git;branch=${SRCBRANCH};protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/satrace.git;nobranch=1"
 SRCREV="32dcbde92dbff750f7aa59d41f3dd3092f368213"
 
 S = "${WORKDIR}/git"
