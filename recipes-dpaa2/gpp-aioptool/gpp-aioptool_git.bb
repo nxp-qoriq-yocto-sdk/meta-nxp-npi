@@ -6,7 +6,7 @@ SECTION = "dpaa2"
 LICENSE = "Freescale-EULA"
 LIC_FILES_CHKSUM = "file://Freescale-EULA;md5=395c11b7d81446eaa8f997521afe0ebb"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/gpp-aioptool.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/gpp-aioptool.git;nobranch=1"
 SRCREV = "d2b674e0a084429c89994dc8b39827592917a7a6"
 
 S = "${WORKDIR}/git"
