@@ -13,8 +13,8 @@ python () {
         d.setVar("WRAP_TARGET_PREFIX", sys_multilib + '-')
 }
 
-SRC_URI = "git://sw-stash.freescale.net/scm/sdk/u-boot-sdk.git;branch=master;protocol=http"
-SRCREV = "f3fa3dbc99e0bc660a413563aa442c4387a406bf"
+SRC_URI = "git://git.freescale.com/ppc/sdk/u-boot.git;nobranch=1"
+SRCREV = "a06b20925c02ba3fa888a1f915ea7935084d8600"
 
 do_compile_append_qoriq() {
     unset i j k
