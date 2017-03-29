@@ -7,11 +7,11 @@ LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=4ccfa994aa96974cfcd39a59faee20a2"
 
 SRC_URI = " \
-git://sw-stash.freescale.net/scm/gitam/odp.git;branch=fsl_odp_v16.07_qoriq;protocol=http \
-git://sw-stash.freescale.net/scm/dpaa2/qbman_userspace.git;protocol=http;name=qbman;destsuffix=git/platform/linux-dpaa2/flib/qbman \
-git://sw-stash.freescale.net/scm/sdk/flib.git;protocol=http;name=rta;destsuffix=git/platform/linux-dpaa2/flib/rta \
+git://git.freescale.com/ppc/sdk/odp.git;nobranch=1 \
+git://git.freescale.com/ppc/sdk/qbman_userspace.git;nobranch=1;name=qbman;destsuffix=git/platform/linux-dpaa2/flib/qbman \
+git://git.freescale.com/ppc/sdk/flib.git;nobranch=1;name=rta;destsuffix=git/platform/linux-dpaa2/flib/rta \
 "
-SRCREV = "9d1d03b34570ce29d1157d06a4c139f76519b4ee"
+SRCREV = "a8935384642f5da8236260dd553c52dbbc7c63ed"
 SRCREV_qbman = "0b8648d702f701417cd6cc3cbcdc228e640d20b6"
 SRCREV_rta = "bbab28b03ae21c52ce913f8b052acf53bd24ff5d"
 
