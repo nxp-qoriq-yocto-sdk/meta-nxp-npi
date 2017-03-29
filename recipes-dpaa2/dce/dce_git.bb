@@ -3,7 +3,7 @@ SECTION = "dpaa2"
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=3bb80dec5c1b94d99a1422cbfd96192c"
 
-SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/dce.git;branch=master;protocol=http"
+SRC_URI = "git://git.freescale.com/ppc/sdk/dce.git;nobranch=1"
 SRCREV = "c31f81667f5cebb3e5331c50655473301672e4de"
 
 S = "${WORKDIR}/git"
