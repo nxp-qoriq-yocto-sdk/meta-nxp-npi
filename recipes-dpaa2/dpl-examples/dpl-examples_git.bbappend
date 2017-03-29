@@ -1,3 +1,3 @@
-SRC_URI = "git://sw-stash.freescale.net/scm/dpaa2/dpl-examples.git;branch=master;protocol=http"
-SRCREV = "e02d1267af101d9bdb24db03f5e923a4288dee4d"
+SRC_URI = "git://git.freescale.com/ppc/sdk/dpl-examples.git;nobranch=1"
+SRCREV = "cea280fd06b9c43fa73f3d9ef629b171cccd0fcd"
 COMPATIBLE_MACHINE = "(ls2080a|ls2088a)"
