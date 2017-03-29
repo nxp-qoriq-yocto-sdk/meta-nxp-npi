@@ -63,6 +63,7 @@ file://0101-add-support-for-rsa-speed-tests.patch \
 file://0102-adjust-to-API-changes-in-kernel-4.10.patch \
 file://0103-zc-Use-the-power-of-elif.patch \
 file://0104-fix-reset-finish-condition-before-test-start.patch \
+file://0105-update-copyright-notes.patch \
 "
 
 SRC_URI_append = " file://0003-update-the-install-path-for-cryptodev-tests.patch"
