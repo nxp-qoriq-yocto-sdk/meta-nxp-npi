@@ -1,6 +1,6 @@
 SCMVERSION = ""
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/linux.git;nobranch=1"
+SRC_URI = "git://source.codeaurora.org/external/qoriq/qoriq-yocto-sdk/linux.git;nobranch=1;protocol=http"
 SRCREV = "1ae843c08261402b2c35d83422e4fa1e313611f4"
 
 DELTA_KERNEL_DEFCONFIG_prepend_ls1012a-32b = "freescale_aarch32.config "
