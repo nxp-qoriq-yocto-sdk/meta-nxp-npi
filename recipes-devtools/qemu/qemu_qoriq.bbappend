@@ -6,7 +6,7 @@ PACKAGECONFIG[nss] = "--enable-smartcard,--disable-smartcard,nss,"
 PACKAGECONFIG[gcrypt] = "--enable-gcrypt,--disable-gcrypt,gcrypt,"
 PACKAGECONFIG[nettle] = "--enable-nettle,--disable-nettle,nettle"
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/qemu.git;nobranch=1"
+SRC_URI = "git://source.codeaurora.org/external/qoriq/qoriq-yocto-sdk/qemu.git;nobranch=1;protocol=http"
 SRCREV = "ef54fffcee4324c9a32bf6e260c8141b4e6c542e"
 
 QEMU_TARGETS_ls1012a-32b = "arm"
