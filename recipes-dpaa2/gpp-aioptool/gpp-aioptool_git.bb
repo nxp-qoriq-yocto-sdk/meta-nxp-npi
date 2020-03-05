@@ -6,7 +6,7 @@ SECTION = "dpaa2"
 LICENSE = "Freescale-EULA"
 LIC_FILES_CHKSUM = "file://Freescale-EULA;md5=395c11b7d81446eaa8f997521afe0ebb"
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/gpp-aioptool.git;nobranch=1"
+SRC_URI = "git://source.codeaurora.org/external/qoriq/qoriq-components/gpp-aioptool.git;nobranch=1;protocol=http"
 SRCREV = "d2b674e0a084429c89994dc8b39827592917a7a6"
 
 S = "${WORKDIR}/git"
