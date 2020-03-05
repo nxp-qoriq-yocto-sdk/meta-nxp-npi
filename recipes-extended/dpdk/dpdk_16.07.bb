@@ -9,7 +9,7 @@ RDEPENDS_${PN}-examples = "bash python-core"
 
 inherit module
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/dpdk.git;nobranch=1 \
+SRC_URI = "git://source.codeaurora.org/external/qoriq/qoriq-yocto-sdk/dpdk.git;nobranch=1;protocol=http \
     file://add-RTE_KERNELDIR_OUT-to-split-kernel-bu.patch \
 "
 SRCREV = "a3395d24774a8a7a2ce0d56a92a8ad2895b2ae8c"
