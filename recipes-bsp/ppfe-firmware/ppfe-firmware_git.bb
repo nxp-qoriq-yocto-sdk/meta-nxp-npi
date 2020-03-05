@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://Freescale-Binary-EULA;md5=f1c407c0fccab5cd0bf9b92565f
 
 INHIBIT_DEFAULT_DEPS = "1"
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/engine-pfe-bin.git;nobranch=1"
+SRC_URI = "git://github.com/nxp/qoriq-engine-pfe-bin.git;nobranch=1;protocol=http"
 SRCREV = "5d984557d9b542bdd8bd469537126c05dd167dcc"
 
 S = "${WORKDIR}/git"
