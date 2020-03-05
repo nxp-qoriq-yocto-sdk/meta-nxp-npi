@@ -13,7 +13,7 @@ python () {
         d.setVar("WRAP_TARGET_PREFIX", sys_multilib + '-')
 }
 
-SRC_URI = "git://git.freescale.com/ppc/sdk/u-boot.git;nobranch=1"
+SRC_URI = "git://source.codeaurora.org/external/qoriq/qoriq-yocto-sdk/u-boot.git;nobranch=1;protocol=http"
 SRCREV = "a06b20925c02ba3fa888a1f915ea7935084d8600"
 
 do_compile_append_qoriq() {
